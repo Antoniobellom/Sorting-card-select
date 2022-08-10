@@ -1,0 +1,99 @@
+body {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    background-color: green;
+  
+  }
+  .text-center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 100%;
+    padding: 10px;
+    
+  
+  }
+  .random-cards { 
+    height: 80px;
+    display: inline-flex;
+    padding: 10px 0px;
+  }
+  .random-cards .card {
+    width: 50px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 0 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+  
+  .random-cards .card .number {
+    width: 100%;
+    text-align: center;
+  }
+  .random-cards .card .number.spade::before {
+    content: "\2660";
+    color: black;
+    display: flex;
+    width: 100%;
+  }
+  .random-cards .card .number.spade::after {
+    content: "\2660";
+    color: black;
+    display: flex;
+    
+    transform: rotate(180deg);
+  }
+  .random-cards .card .number.cubs::before {
+    content: "\2663";
+    color: black;
+    display: flex;
+    width: 100%;
+  }
+  .random-cards .card .number.cubs::after {
+    content: "\2663";
+    color: black;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+  }
+  .random-cards .card .number.diamond::before {
+    content: "\2666";
+    color: red;
+    display: flex;
+    width: 100%;
+  }
+  .random-cards .card .number.diamond::after {
+    content: "\2666";
+    color: red;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+  }
+  .random-cards .card .number.heart::before {
+    content: "\2665";
+    color: red;
+    display: flex;
+    width: 100%;
+  }
+  .random-cards .card .number.heart::after {
+    content: "\2665";
+    color: red;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+  }
+  .step-sorting-card{
+      display: flex;
+      flex-direction: column;
+  }
+  
